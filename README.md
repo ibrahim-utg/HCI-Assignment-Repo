@@ -1,16 +1,51 @@
-# React + Vite
+# Agro-Youth Foundation — Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A front-end-only React site for Agro-Youth Foundation, a community nonprofit in Faraba, The
+Gambia, coaching youth into agriculture through coaching, seminars, plant education, land
+protection, and a 100,000-tree-a-year planting initiative.
 
-Currently, two official plugins are available:
+## Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Home** — mission overview, the 100,000-trees-a-year counter, and program highlights.
+- **About** — values, community-centred goals, and the leadership team.
+- **Programs** — an in-depth look at each initiative, plus the flagship tree-planting program.
+- **Donate** — fundable campaigns (seminars, outreach travel, the seed bank, tree planting, and
+  a general fund), each with a progress bar and an inline pledge form.
+- **Contact** — email, phone, SMS, a map of Faraba, and a message form.
 
-## React Compiler
+## Running it locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Then open the printed local URL (usually `http://localhost:5173`).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To build a production bundle:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Important notes before you go live
+
+- **Placeholder content.** The email, phone number, leadership bios, and donation campaign
+  targets/amounts are realistic examples, not real data. Replace them in:
+  - `src/components/Navbar.jsx` / `Footer.jsx` / `Contact.jsx` — contact details
+  - `src/pages/About.jsx` — leadership team and copy
+  - `src/data/campaigns.js` — donation campaigns, targets, and starting totals
+- **No backend.** This is a front-end-only app, as requested. The donation pledges and contact
+  form both work and update on-screen instantly, but nothing is saved or sent anywhere — refreshing
+  the page resets every pledge back to its starting value. To make donations or messages persist or
+  actually process payment, you'll need to connect a backend (e.g. Stripe/PayPal for payments, or an
+  email service / form endpoint like Formspree for the contact form).
+- **Map embed.** The Contact page embeds a basic Google Maps view of Faraba with no API key
+  required. If you want a pinned exact address, swap the `q=` value in
+  `src/pages/Contact.jsx` for your precise address or coordinates.
+
+## Stack
+
+Vite + React 18, React Router for the 5 pages, Tailwind CSS for styling, and lucide-react for
+icons. No backend, no database, no external API keys required to run it.
