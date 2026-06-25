@@ -2,23 +2,23 @@
 
 @theme {
   /* --- BRAND COLORS --- */
-  --color-cream: #faf4e6; /* Warm page background */
-  --color-cream-deep: #f0e4c7; /* Slightly deeper cream, used on card variants */
-  --color-ink: #20281f; /* Body text — a deep, green-tinted near-black */
+  --color-cream: #faf4e6;
+  --color-cream-deep: #f0e4c7;
+  --color-ink: #20281f;
 
-  --color-forest: #1e4b33; /* Primary green — nav, headings, "Support Our Work" button */
+  --color-forest: #1e4b33;
   --color-forest-light: #2e6647;
   --color-forest-dark: #14331f;
 
-  --color-leaf: #5fa346; /* Accent green — CTAs, progress bars, highlights */
+  --color-leaf: #5fa346;
   --color-leaf-light: #7fbf63;
-  --color-leaf-dark: #447a33; /* Eyebrow labels, sub-elements */
+  --color-leaf-dark: #447a33;
 
-  --color-gold: #e4a937; /* Sun gold — the "Donate" button, matches the focus ring */
+  --color-gold: #e4a937;
   --color-gold-light: #f0c268;
   --color-gold-dark: #bd8620;
 
-  --color-clay: #c1502e; /* Clay red — used sparingly for errors/urgency */
+  --color-clay: #c1502e;
   --color-clay-light: #d97350;
   --color-clay-dark: #9c3d22;
 
