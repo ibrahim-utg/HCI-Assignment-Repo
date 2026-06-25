@@ -8,7 +8,7 @@ import {
   MapPin,
 } from "lucide-react";
 import TreeCounter from "../components/TreeCounter.jsx";
-import SectionHeading from "../components/SectionHeading.jsx";
+import SectionHeading from "../components/SectionHeader.jsx";
 
 const focusAreas = [
   {

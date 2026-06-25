@@ -3,10 +3,7 @@ import { useEffect } from "react";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import Programs from "./pages/Programs.jsx";
 import Donate from "./pages/Donate.jsx";
-import Contact from "./pages/Contact.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -27,10 +24,7 @@ export default function App() {
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/programs" element={<Programs />} />
           <Route path="/donate" element={<Donate />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />

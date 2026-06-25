@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { HandHeart } from "lucide-react";
-import SectionHeading from "../components/SectionHeading.jsx";
+import SectionHeading from "../components/SectionHeader.jsx";
 import DonationCard from "../components/DonationCard.jsx";
 import { initialCampaigns } from "../data/campaigns.js";
 
