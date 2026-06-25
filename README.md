@@ -41,11 +41,8 @@ npm run preview
   the page resets every pledge back to its starting value. To make donations or messages persist or
   actually process payment, you'll need to connect a backend (e.g. Stripe/PayPal for payments, or an
   email service / form endpoint like Formspree for the contact form).
-- **Map embed.** The Contact page embeds a basic Google Maps view of Faraba with no API key
-  required. If you want a pinned exact address, swap the `q=` value in
-  `src/pages/Contact.jsx` for your precise address or coordinates.
 
 ## Stack
 
-Vite + React 18, React Router for the 5 pages, Tailwind CSS for styling, and lucide-react for
-icons. No backend, no database, no external API keys required to run it.
+Vite + React 18, React Router for the 5 pages, Tailwind CSS v4 (CSS-first config via
+`src/index.css`) for styling, and lucide-react for icons.
