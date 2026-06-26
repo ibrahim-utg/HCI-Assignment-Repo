@@ -55,11 +55,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="shrink-0 text-leaf-light" /> +220
-                700 0000
+                329 9767
               </li>
               <li className="flex items-center gap-2">
                 <MessageCircle size={16} className="shrink-0 text-leaf-light" />{" "}
-                SMS +220 700 0000
+                SMS +220 329 9767
               </li>
             </ul>
           </div>
