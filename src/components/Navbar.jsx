@@ -23,7 +23,9 @@ export default function Navbar() {
 
   const linkClass = ({ isActive }) =>
     `font-body text-[15px] font-semibold transition-colors hover:text-leaf-dark ${
-      isActive ? "text-forest-dark" : "text-ink/70"
+      isActive
+        ? "text-forest-dark underline underline-offset-8 decoration-2 decoration-leaf"
+        : "text-ink/70"
     }`;
 
   return (
@@ -81,7 +83,11 @@ export default function Navbar() {
                 to={link.to}
                 onClick={() => setOpen(false)}
                 className={({ isActive }) =>
-                  `font-body text-base font-semibold ${isActive ? "text-forest-dark" : "text-ink/70"}`
+                  `font-body text-base font-semibold ${
+                    isActive
+                      ? "text-forest-dark underline underline-offset-4 decoration-2 decoration-leaf"
+                      : "text-ink/70"
+                  }`
                 }
               >
                 {link.label}
